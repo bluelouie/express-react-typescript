@@ -6,7 +6,7 @@
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": false,
-        "outDir": "dist",
+        "outDir": "api",
         "baseUrl": ".",
         "jsx": "react",
         "paths": {
@@ -16,7 +16,8 @@
         }
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "app.ts"
     ],
     "exclude": [
         "src/client/"

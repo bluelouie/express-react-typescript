@@ -3,9 +3,8 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-import indexRouter from './routes';
-import usersRouter from './routes/users';
-
+import indexRouter from './routes/index.js';
+import usersRouter from './routes/users.js';
 
 const index = express();
 
@@ -15,7 +14,7 @@ index.use(express.urlencoded({ extended: false }));
 index.use(cookieParser());
 // index.use(express.static(path.join(__dirname, 'api')));
 
-index.get('/', indexRouter);
-index.get('/users', usersRouter);
+index.use('/', indexRouter);
+index.use('/api/users', usersRouter);
 
 module.exports = index;
