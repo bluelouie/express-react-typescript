@@ -12,7 +12,7 @@ index.use(logger('dev'));
 index.use(express.json());
 index.use(express.urlencoded({ extended: false }));
 index.use(cookieParser());
-// index.use(express.static(path.join(__dirname, 'api')));
+index.use(express.static('public'));
 
 index.use('/', indexRouter);
 index.use('/api/users', usersRouter);

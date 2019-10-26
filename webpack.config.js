@@ -5,11 +5,12 @@ module.exports = {
     entry: 'src/client/index.tsx',
     output: {
         filename: 'bundle.[hash].js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'public/javascript')
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: 'src/client/index.html'
+            template: 'src/client/index.html',
+            filename: '../index.html' //
         })
     ],
     resolve: {
