@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "start": "tsc && node ./bin/www",
-    "dev:watch": "nodemon",
-    "wds": "webpack-dev-server --hot --open",
+    "start:watch": "nodemon",
+    "client:watch": "webpack-dev-server --hot --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && webpack --config webpack.config.js --mode production"
   },
