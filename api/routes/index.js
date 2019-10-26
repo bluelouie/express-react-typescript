@@ -5,9 +5,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const router = express_1.default.Router();
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function (req, res, next) {
-    res.send('respond with a resource hi');
+    res.sendFile('index.html', {
+        root: 'C:\\Users\\jmedi\\Documents\\Github\\social-network\\public'
+    });
 });
 exports.default = router;
-//# sourceMappingURL=users.js.map

@@ -3,7 +3,9 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+    res.sendFile('index.html', {
+      root: 'C:\\Users\\jmedi\\Documents\\Github\\social-network\\public'
+    });
 });
 
 export default router;
