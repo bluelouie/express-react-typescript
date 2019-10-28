@@ -4,4 +4,4 @@
 
 > Does not use create-react-app for base configuration freedom
 
-> None opinionated
+> Unopinionated
