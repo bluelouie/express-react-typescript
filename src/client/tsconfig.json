@@ -16,6 +16,7 @@
         }
     },
     "include": [
-        "src/backend/*"
+        "components/*",
+        "index.tsx"
     ]
 }
