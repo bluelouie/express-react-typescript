@@ -1,16 +1,9 @@
 const merge = require('webpack-merge');
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const baseConfig = require('./webpack.config.js');
 
 module.exports = merge(baseConfig, {
     mode: "development",
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'src/client/index.html',
-            filename: 'index.html' //to maintain public folder structure
-        })
-    ],
 
     devServer: {
         contentBase: path.join(__dirname, 'public'),
