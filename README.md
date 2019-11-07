@@ -10,7 +10,7 @@ This is a jumping-off project, meant to give a faster start on a new project by 
 
 ### Un-opinionated?
 
-There is no style loader/http library/css framework (apart from bass css) or any other bells and whistles so you can use what you want/how you want it. 
+There is no style loader, http library, css framework, or  any other bells and whistles so you can use what you want, how you want it with no push back. 
 
 Which is also the reason I didn't use create-react-app 
 
@@ -50,7 +50,7 @@ You can define more proxies in webpack.dev
 When you run `npm build` all the source code (`/src`) will be compiled and bundled into separate directories
 
 ```
-dist/ <--Complied server-side JS code
+dist/ <-- Complied server-side JS code
 public/ <-- Bundled and minified client-side code
 ```
 
@@ -63,3 +63,4 @@ public/ <-- Bundled and minified client-side code
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
