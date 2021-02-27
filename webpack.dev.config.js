@@ -11,7 +11,7 @@ module.exports = merge(baseConfig, {
         proxy: [
             {
                 context: ['/api', '/auth'],  // can have multiple
-                target: 'http://localhost:3001', //server and port to redirect to
+                target: 'http://localhost:3000', //server and port to redirect to
                 secure: false //don't use https
             }
         ],
