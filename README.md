@@ -17,33 +17,36 @@ Which is also the reason I didn't use create-react-app
 ## Development
 Run `npm install` to install all the packages plus all @types so Typescript wont yell at you at the start.
 
-To start the client server to begin building your React app (with hot reload), run :
+To start the project as a whole, run:
 
 ```
-npm run client:watch
+npm start
+```
+
+A proxy is setup in the webpack configs to allow you to run API requests from the client side, without having to define another port.
+You can define more proxies in webpack.config.dev
+
+```
+http://localhost:8080/api/{endpoint}
+```
+
+To run the server separately:
+```
+npm run server
+
+//--> Runs on port 3000
+```
+
+To run only the client:
+
+```
+npm run client
+
 
 //--> Runs on port 8080
 ```
 
-To start the server with nodemon (hot reload): 
 
-```
-npm run start:watch
-
-//--> Runs on port 3000
-```
- 
-An Proxy is setup so you can run API requests from the client side, without having to define another port.
-
-```
-npm run client:watch
-npm run start:watch
-
-
-http://localhost:8080/api/{endpoint}
-```
-
-You can define more proxies in webpack.dev
 
 ## Build
 
